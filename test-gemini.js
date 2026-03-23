@@ -1,7 +1,7 @@
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 async function testModels() {
-  const genAI = new GoogleGenerativeAI("AIzaSyAQUfpMiSoFsxkxyhT85IZCPGfCnLe6ZCo");
+  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
   
   const modelsToTest = ["gemini-1.5-flash", "gemini-1.5-flash-latest", "gemini-pro", "gemini-1.0-pro"];
   
