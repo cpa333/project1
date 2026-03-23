@@ -75,7 +75,7 @@ export default function ScriptTabs({ rawText, translation, grammarAnalysis, save
                         </span>
                       </div>
                       <p className="text-xl md:text-2xl font-bold text-gray-900 leading-snug font-serif tracking-tight ml-1">
-                        "{item.sentence_or_phrase}"
+                        &quot;{item.sentence_or_phrase}&quot;
                       </p>
                     </div>
                     <div className="px-5 md:px-7 py-5 md:py-7 text-gray-700 text-[1.1rem] md:text-[1.2rem] leading-relaxed bg-white">
