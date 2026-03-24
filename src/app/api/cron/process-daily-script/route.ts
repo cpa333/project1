@@ -26,7 +26,7 @@ export async function GET(request: Request) {
     let isFallbackDb = true;
 
     try {
-      const res = await fetch(fetchUrl);
+      const res = await fetch(fetchUrl, { cache: 'no-store' });
       const data = await res.json();
       
       const item = data?.items?.[0];
